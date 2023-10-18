@@ -30,7 +30,7 @@ namespace teste
                 // Criar Conexao Com MySql
                 Conexao = new MySqlConnection(Data_source);
 
-                string sql = "INSERT INTO contato (nome,email,telefone) VALUES ('" + txtName.Text + "','" + txtEmail.Text + "','" + TxtTelefone.Text + "')";
+                string sql = "INSERT INTO contato (nome,email,telefone) VALUES ('" + txtName.Text + "','" + Txt_Cpf.Text + "','" + TxtTelefone.Text + "')";
 
                 MySqlCommand comando = new MySqlCommand(sql, Conexao);
 

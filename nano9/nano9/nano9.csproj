@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Folha de pagamento\folhaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Folha de pagamento\folhaPagamento.Designer.cs">
+      <DependentUpon>folhaPagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="funcionarios cadastro\addFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Folha de pagamento\folhaPagamento.resx">
+      <DependentUpon>folhaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="funcionarios cadastro\addFuncionarios.resx">
       <DependentUpon>addFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,8 +141,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="folha de pagamento\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
