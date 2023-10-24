@@ -36,8 +36,8 @@
             this.txtName = new System.Windows.Forms.MaskedTextBox();
             this.TxtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Text_Cep = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.Text_Cep = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@
             // 
             // Txt_Cpf
             // 
-            this.Txt_Cpf.Location = new System.Drawing.Point(100, 130);
+            this.Txt_Cpf.Location = new System.Drawing.Point(100, 126);
             this.Txt_Cpf.Mask = "000.000.000-00";
             this.Txt_Cpf.Name = "Txt_Cpf";
             this.Txt_Cpf.Size = new System.Drawing.Size(163, 27);
@@ -122,14 +122,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoais";
             // 
-            // Text_Cep
-            // 
-            this.Text_Cep.Location = new System.Drawing.Point(352, 140);
-            this.Text_Cep.Mask = "00000-000";
-            this.Text_Cep.Name = "Text_Cep";
-            this.Text_Cep.Size = new System.Drawing.Size(197, 27);
-            this.Text_Cep.TabIndex = 25;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -138,6 +130,14 @@
             this.label4.Size = new System.Drawing.Size(38, 20);
             this.label4.TabIndex = 26;
             this.label4.Text = "Cep";
+            // 
+            // Text_Cep
+            // 
+            this.Text_Cep.Location = new System.Drawing.Point(352, 140);
+            this.Text_Cep.Mask = "00000-000";
+            this.Text_Cep.Name = "Text_Cep";
+            this.Text_Cep.Size = new System.Drawing.Size(197, 27);
+            this.Text_Cep.TabIndex = 25;
             // 
             // addFuncionarios
             // 

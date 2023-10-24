@@ -98,11 +98,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apontamento de Horas\apontamentoHoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apontamento de Horas\apontamentoHoras.Designer.cs">
+      <DependentUpon>apontamentoHoras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Folha de pagamento\folhaPagamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Folha de pagamento\folhaPagamento.Designer.cs">
       <DependentUpon>folhaPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="funcionarios cadastro\addFuncionarios.cs">
       <SubType>Form</SubType>
@@ -112,8 +124,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Apontamento de Horas\apontamentoHoras.resx">
+      <DependentUpon>apontamentoHoras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Folha de pagamento\folhaPagamento.resx">
       <DependentUpon>folhaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="funcionarios cadastro\addFuncionarios.resx">
       <DependentUpon>addFuncionarios.cs</DependentUpon>
@@ -126,6 +144,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -141,6 +160,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Relogio-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-09-19 140414.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

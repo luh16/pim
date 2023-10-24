@@ -17,7 +17,7 @@ namespace nano9
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addFuncionarios());
+            Application.Run(new frmMenuPrincipal());
         }
     }
 }
