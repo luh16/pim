@@ -28,133 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Txt_SlrHora = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Txt_HrTrabalhada = new System.Windows.Forms.Label();
-            this.Txt_SlrBruto = new System.Windows.Forms.Label();
-            this.Txt_Inss = new System.Windows.Forms.Label();
-            this.Text_SlrLiquido = new System.Windows.Forms.Label();
-            this.Txt_slrLiquido = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.horasTrab = new System.Windows.Forms.TextBox();
             this.btn_calcular = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.valorHora = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // Txt_SlrHora
-            // 
-            this.Txt_SlrHora.AutoSize = true;
-            this.Txt_SlrHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_SlrHora.Location = new System.Drawing.Point(123, 51);
-            this.Txt_SlrHora.Name = "Txt_SlrHora";
-            this.Txt_SlrHora.Size = new System.Drawing.Size(120, 25);
-            this.Txt_SlrHora.TabIndex = 0;
-            this.Txt_SlrHora.Text = "Salario Hora";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(273, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 22);
-            this.textBox1.TabIndex = 1;
             // 
             // Txt_HrTrabalhada
             // 
             this.Txt_HrTrabalhada.AutoSize = true;
             this.Txt_HrTrabalhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_HrTrabalhada.Location = new System.Drawing.Point(87, 109);
+            this.Txt_HrTrabalhada.Location = new System.Drawing.Point(52, 271);
+            this.Txt_HrTrabalhada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_HrTrabalhada.Name = "Txt_HrTrabalhada";
-            this.Txt_HrTrabalhada.Size = new System.Drawing.Size(171, 25);
+            this.Txt_HrTrabalhada.Size = new System.Drawing.Size(246, 32);
             this.Txt_HrTrabalhada.TabIndex = 2;
             this.Txt_HrTrabalhada.Text = "Horas trabalhadas";
             // 
-            // Txt_SlrBruto
+            // horasTrab
             // 
-            this.Txt_SlrBruto.AutoSize = true;
-            this.Txt_SlrBruto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_SlrBruto.Location = new System.Drawing.Point(136, 168);
-            this.Txt_SlrBruto.Name = "Txt_SlrBruto";
-            this.Txt_SlrBruto.Size = new System.Drawing.Size(122, 25);
-            this.Txt_SlrBruto.TabIndex = 3;
-            this.Txt_SlrBruto.Text = "Salario bruto";
-            // 
-            // Txt_Inss
-            // 
-            this.Txt_Inss.AutoSize = true;
-            this.Txt_Inss.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Inss.Location = new System.Drawing.Point(184, 224);
-            this.Txt_Inss.Name = "Txt_Inss";
-            this.Txt_Inss.Size = new System.Drawing.Size(59, 25);
-            this.Txt_Inss.TabIndex = 4;
-            this.Txt_Inss.Text = "INSS";
-            // 
-            // Text_SlrLiquido
-            // 
-            this.Text_SlrLiquido.AutoSize = true;
-            this.Text_SlrLiquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Text_SlrLiquido.Location = new System.Drawing.Point(124, 287);
-            this.Text_SlrLiquido.Name = "Text_SlrLiquido";
-            this.Text_SlrLiquido.Size = new System.Drawing.Size(134, 25);
-            this.Text_SlrLiquido.TabIndex = 5;
-            this.Text_SlrLiquido.Text = "Salario liquido";
-            // 
-            // Txt_slrLiquido
-            // 
-            this.Txt_slrLiquido.Location = new System.Drawing.Point(273, 290);
-            this.Txt_slrLiquido.Name = "Txt_slrLiquido";
-            this.Txt_slrLiquido.Size = new System.Drawing.Size(181, 22);
-            this.Txt_slrLiquido.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(273, 228);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(181, 22);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(273, 171);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(181, 22);
-            this.textBox4.TabIndex = 8;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(273, 113);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(181, 22);
-            this.textBox5.TabIndex = 9;
+            this.horasTrab.Location = new System.Drawing.Point(324, 275);
+            this.horasTrab.Margin = new System.Windows.Forms.Padding(4);
+            this.horasTrab.Name = "horasTrab";
+            this.horasTrab.Size = new System.Drawing.Size(247, 29);
+            this.horasTrab.TabIndex = 9;
             // 
             // btn_calcular
             // 
             this.btn_calcular.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_calcular.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_calcular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_calcular.Location = new System.Drawing.Point(435, 346);
+            this.btn_calcular.Location = new System.Drawing.Point(58, 372);
+            this.btn_calcular.Margin = new System.Windows.Forms.Padding(4);
             this.btn_calcular.Name = "btn_calcular";
-            this.btn_calcular.Size = new System.Drawing.Size(205, 61);
+            this.btn_calcular.Size = new System.Drawing.Size(282, 92);
             this.btn_calcular.TabIndex = 10;
             this.btn_calcular.Text = "CALCULAR";
             this.btn_calcular.UseVisualStyleBackColor = false;
+            this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click);
             // 
-            // Folha_Pagamento
+            // label1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(52, 172);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 32);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Valor da Hora";
+            // 
+            // valorHora
+            // 
+            this.valorHora.Location = new System.Drawing.Point(324, 176);
+            this.valorHora.Margin = new System.Windows.Forms.Padding(4);
+            this.valorHora.Name = "valorHora";
+            this.valorHora.Size = new System.Drawing.Size(247, 29);
+            this.valorHora.TabIndex = 12;
+            // 
+            // folhaPagamento
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1100, 675);
+            this.Controls.Add(this.valorHora);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_calcular);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.Txt_slrLiquido);
-            this.Controls.Add(this.Text_SlrLiquido);
-            this.Controls.Add(this.Txt_Inss);
-            this.Controls.Add(this.Txt_SlrBruto);
+            this.Controls.Add(this.horasTrab);
             this.Controls.Add(this.Txt_HrTrabalhada);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Txt_SlrHora);
-            this.Name = "Folha_Pagamento";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "folhaPagamento";
             this.Text = "Folha_Pagamento";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -162,17 +106,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Txt_SlrHora;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Txt_HrTrabalhada;
-        private System.Windows.Forms.Label Txt_SlrBruto;
-        private System.Windows.Forms.Label Txt_Inss;
-        private System.Windows.Forms.Label Text_SlrLiquido;
-        private System.Windows.Forms.TextBox Txt_slrLiquido;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox horasTrab;
         private System.Windows.Forms.Button btn_calcular;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox valorHora;
     }
 }
