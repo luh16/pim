@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,21 +8,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using System.Xml.Linq;
 
-namespace teste
+
+namespace nano9.consultar_funcionarios
 {
-    public partial class addFuncionarios : Form
+    public partial class consultaFuncionario : Form
     {
-        private readonly object txtNome;
+
         MySqlConnection Conexao;
-        public addFuncionarios()
+        public consultaFuncionario()
         {
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
-        private void button1_Click(object sender, EventArgs e)
+        }
+
+        private void consultarCpf_Click(object sender, EventArgs e)
         {
 
             try
@@ -30,15 +36,21 @@ namespace teste
                 // Criar Conexao Com MySql
                 Conexao = new MySqlConnection(Data_source);
 
-                string sql = "INSERT INTO contatos (nome,telefone,cpf,cep) VALUES ('" + txtName.Text + "','" + TxtTelefone.Text + "','" + Txt_Cpf.Text + "','" + Text_Cep.Text + "')";
+                string sql = "SELECT nome,telefone,cpf,cep FROM db_agenda.contatos WHERE cpf = ('" + maskedTextBoxConsultaCpf.Text + "')";
 
                 MySqlCommand comando = new MySqlCommand(sql, Conexao);
 
                 Conexao.Open();
 
-                comando.ExecuteReader();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
 
-                MessageBox.Show("Cadastro feito com sucesso!");
+                dataGridConsultaCpf.DataSource = dataTable;
+
+
+
+                MessageBox.Show("Consulta feita com sucesso!");
 
                 //Execultar Comando Insert
 
@@ -54,12 +66,7 @@ namespace teste
 
 
             }
-        }
-
-        private void Txt_Cpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
+        
     }
-    
+    }
 }

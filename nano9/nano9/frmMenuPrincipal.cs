@@ -1,4 +1,5 @@
 ﻿using nano9.Apontamento_de_Horas;
+using nano9.consultar_funcionarios;
 using nano9.Folha_Pagamento;
 using System;
 using System.Collections.Generic;
@@ -45,6 +46,13 @@ namespace nano9
 
             _folhaPagamento.ShowDialog();
 
+        }
+
+        private void consultarFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            consultaFuncionario _consultaFuncionario = new consultaFuncionario();
+
+            _consultaFuncionario.ShowDialog();
         }
     }
 }

@@ -104,6 +104,12 @@
     <Compile Include="Apontamento de Horas\apontamentoHoras.Designer.cs">
       <DependentUpon>apontamentoHoras.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultar funcionarios\consultaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultar funcionarios\consultaFuncionario.Designer.cs">
+      <DependentUpon>consultaFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Folha de pagamento\folhaPagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Apontamento de Horas\apontamentoHoras.resx">
       <DependentUpon>apontamentoHoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultar funcionarios\consultaFuncionario.resx">
+      <DependentUpon>consultaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Folha de pagamento\folhaPagamento.resx">
       <DependentUpon>folhaPagamento.cs</DependentUpon>

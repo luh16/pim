@@ -127,3 +127,7 @@ C:\ariel\PIM\pim\nano9\nano9\obj\Debug\nano9.csproj.CopyComplete
 C:\ariel\PIM\pim\nano9\nano9\obj\Debug\nano9.Folha_Pagamento.folhaPagamento.resources
 C:\ariel\PIM\pim\nano9\nano9\obj\Debug\nano9.Apontamento_de_Horas.apontamentoHoras.resources
 C:\ariel\PIM\pim\nano9\nano9\obj\Debug\nano9.frmMenuPrincipal.resources
+C:\pim_ariel\pim\nano9\nano9\obj\Debug\nano9.Apontamento_de_Horas.apontamentoHoras.resources
+C:\pim_ariel\pim\nano9\nano9\obj\Debug\nano9.Folha_Pagamento.folhaPagamento.resources
+C:\pim_ariel\pim\nano9\nano9\obj\Debug\nano9.frmMenuPrincipal.resources
+C:\pim_ariel\pim\nano9\nano9\obj\Debug\nano9.consultar_funcionarios.consultaFuncionario.resources
